@@ -1,0 +1,135 @@
+$blue: #0087ff;
+$yellow: #f6ff00;
+$red: #ff0000;
+$green: #00ff04;
+$orange:#ff6a00;
+$dkOrange:#ea5804;
+$grey:#353235;
+$dkGrey:#191719;
+h1 {
+  font-size: 50px;
+  font-weight: bold;
+  font-family: arial;
+}
+
+body {
+  background: url('https://images.unsplash.com/photo-1465533403411-0af6ede250dd?dpr=1.25&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=');
+  text-align: center;
+  color: white;
+}
+
+.container {
+  width: 500px;
+}
+
+.top,
+.bottom {
+  display: flex;
+  justify-content: center;
+}
+
+.middle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px 15px auto;
+}
+
+.circle {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin: 20px 20px 0px 20px;
+  cursor: pointer;
+  &:active {
+    // Try deleting active  (better mobile performance)
+    background-color: white;
+  }
+}
+
+#blue {
+  border: 15px solid $blue;
+  &:active {
+    background-color: $blue;
+  }
+}
+
+#red {
+  border: 15px solid $red;
+  &:active {
+    background-color: $red;
+  }
+}
+
+#green {
+  border: 15px solid $green;
+  &:active {
+    background-color: $green;
+  }
+}
+
+#yellow {
+  border: 15px solid $yellow;
+  &:active {
+    background-color: $yellow;
+  }
+}
+
+;
+.button {
+  width: 75px;
+  height: 35px;
+  margin: 10px;
+  cursor: pointer;
+  font-family: arial;
+  padding-top: 2px;
+}
+
+#count {
+  font-size: 35px;
+  font-weight: bold;
+}
+
+#reset {
+  background-color: $orange;
+  font-size: 19px;
+  &:hover {
+    background-color: $dkOrange;
+  }
+  &:active {
+    background-color: $orange;
+    width: 79px;
+    height: 35px;
+    font-size: 21px;
+  }
+}
+
+#strict {
+  background-color: $grey;
+  font-size: 19px;
+  &:hover {
+    background-color: $dkGrey;
+  }
+  &:active {
+    background-color: $grey;
+    width: 79px;
+    height: 35px;
+    font-size: 21px;
+  }
+}
+
+#blue.fill {
+  background-color: $blue;
+}
+
+#green.fill {
+  background-color: $green;
+}
+
+#red.fill {
+  background-color: $red;
+}
+
+#yellow.fill {
+  background-color: $yellow;
+}

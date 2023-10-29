@@ -1,0 +1,42 @@
+<!--
+coded this challenge with the help of this article from medium... https://medium.com/front-end-hacking/create-simon-game-in-javascript-d53b474a7416#.b28ovu3aa
+-->
+
+<html>
+
+<head>
+    <script src="https://use.fontawesome.com/4f3f3e2481.js"></script>
+
+    <title>Simon Game</title>
+</head>
+
+
+<div class='container'>
+
+    <h1>Simon the Game</h1>
+
+    <div class='row top'>
+        <div class='circle' id='green' onClick="addToPlayer(this.id)">
+        </div>
+    </div>
+    <div class='row middle'>
+        <div class='circle' id='red' onClick="addToPlayer(this.id)">
+        </div>
+        <div>
+            <div id="gameNumber">
+                <h2 id="count">0</h2>
+            </div>
+            <div class='button' id='reset'>RESET</div>
+            <div class='button' id='strict'>STRICT</div>
+        </div>
+        <div class='circle' id='yellow' onClick="addToPlayer(this.id)">
+        </div>
+    </div>
+    <div class='row bottom'>
+        <div class='circle' id='blue' onClick="addToPlayer(this.id)">
+        </div>
+    </div>
+</div>
+
+
+</html>
